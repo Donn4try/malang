@@ -23,27 +23,6 @@
     perspective: 1000px;
   }
   
-  .title {
-    position: absolute;
-    top: 30px;
-    font-size: 45px;
-    color: white;
-    z-index: 999;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .reloadBtn {
-    position: absolute;
-    top: 110px;
-    z-index: 999;
-    padding: 8px 30px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-
   .reloadBtn:hover {
     background-color: #eaeaea;
   }
@@ -514,6 +493,50 @@
     --size: 6vmin;
     transform: rotate(-20deg);
     animation: growing-grass-ans--1 2s 2.6s backwards;
+  
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 999;
+}
+
+.profile-pic {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+}
+
+.title {
+  position: relative;
+  margin-top: 10px;
+  font-size: 45px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.reloadBtn {
+  position: relative;
+  margin-top: 10px;
+  padding: 8px 30px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.reloadBtn:hover {
+  background-color: #eaeaea;
+}
   }
   @keyframes growing-grass-ans--1 {
     0% {
@@ -1255,16 +1278,3 @@
   .not-loaded * {
     animation-play-state: paused !important;
   }
-.profile-pic {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  z-index: 1000;
-}
