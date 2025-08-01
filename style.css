@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    z-index: 1;
+}
+
+.flowers {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    margin: 0 10px;
+    animation: flower-bloom 5s ease-in-out infinite;
+}
+
+.flower__leafs {
+    position: relative;
+    z-index: 2;
+}
+
+.flower__leaf {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: leaf-fall 5s ease-in-out infinite;
+}
+
+.flower__white-circle {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: white-circle-pulse 5s ease-in-out infinite;
+}
+
+.flower__line {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100px;
+    background: #ff6b6b;
+    z-index: 1;
+}
+
+.flower__line__leaf {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: leaf-fall 5s ease-in-out infinite;
+}
+
+.flower__light {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: light-glow 5s ease-in-out infinite;
+}
+
+.grow-ans {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flower__g-long {
+    position: relative;
+    z-index: 2;
+}
+
+.flower__g-long__top {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: g-long-pulse 5s ease-in-out infinite;
+}
+
+.flower__g-long__bottom {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: g-long-pulse 5s ease-in-out infinite;
+}
+
+.growing-grass {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flower__grass {
+    position: relative;
+    z-index: 2;
+}
+
+.flower__grass--top {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: grass-top-pulse 5s ease-in-out infinite;
+}
+
+.flower__grass--bottom {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: grass-bottom-pulse 5s ease-in-out infinite;
+}
+
+.flower__grass__leaf {
+    position: absolute;
+    background: #ff6b6b;
+    border-radius: 50%;
+    animation: grass-leaf-pulse 5s ease-in-out infinite;
+}
+
+.flower__grass__overlay {
+    position: absolute;
+    background: rgba(255, 107, 107, 0.5);
+    border-radius: 50%;
+    animation: grass-overlay-pulse 5s ease-in-out infinite;
+}
+
+@keyframes flower-bloom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes leaf-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes white-circle-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes light-glow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes g-long-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes grass-top-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes grass-bottom-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes grass-leaf-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes grass-overlay-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
